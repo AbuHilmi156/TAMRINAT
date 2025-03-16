@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+         #red{
+            background-color: red;
+         }
+
+         #green{
+            background-color: green;
+         }
+
+         #blue{
+            background-color: blue;
+         }
+
+         button{
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 8px;
+         }
+
+         .button-color{
+            display: inline-block;
+            max-width: 100px;
+            border: 2px solid;
+            padding: 10px;
+            padding-left: 30px;
+            border-radius: 5px;
+            background-color: bisque;
+         }
+
+         h3{
+            border: 2px solid;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: greenyellow;
+         }
+
+    </style>
+</head>
+<body>
+<h3 style="font-size: 30px;">Color Flipper</h3>
+<div class="button-color">
+    <button id="red" onclick="setColor('red')">Red</button>
+    <button id="green" onclick="setColor('green')">Green</button>
+    <button id="blue"onclick="setColor('blue')">Blue</button>
+    <button onclick="randomColor()">Random</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
